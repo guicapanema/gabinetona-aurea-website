@@ -1,207 +1,654 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>My first Bulma website</title>
-    <link rel="stylesheet" href="css/main.css">
-  </head>
-  <body>
-    <section class="hero is-medium is-primary">
-      <div class="hero-body">
-        <div class="container">
-          <div class="columns">
-            <div class="column is-8-desktop is-offset-2-desktop">
-              <h1 class="title is-2 is-spaced">
-                Hello Bulma!
-              </h1>
-              <h2 class="subtitle is-4">
-                  Congratulations! You're running the <strong>Bulma start</strong> project.
-                  <br>
-                  It includes everything you need to <strong>build your own website</strong> with Bulma.
-              </h2>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="section">
-      <div class="container">
-        <div class="columns">
-          <div class="column is-8-desktop is-offset-2-desktop">
-            <div class="content">
-              <h3>What's included</h3>
-              <p>
-                The <code>npm</code> dependencies included in <code>package.json</code> are:
-              </p>
-              <ul>
-                <li>
-                  <code><a href="https://github.com/jgthms/bulma">bulma</a></code>
-                </li>
-                <li>
-                  <code><a href="https://github.com/sass/node-sass">node-sass</a></code> to compile your own Sass file
-                </li>
-                <li>
-                  <code><a href="https://github.com/postcss/postcss-cli">postcss-cli</a></code> and <code><a href="https://github.com/postcss/autoprefixer">autoprefixer</a></code> to add support for older browsers
-                </li>
-                <li>
-                  <code><a href="https://babeljs.io/docs/usage/cli/">babel-cli</a></code>,
-                  <code><a href="https://github.com/babel/babel-preset-env">babel-preset-env</a></code>
-                  and
-                  <code><a href="https://github.com/jmcriffey/babel-preset-es2015-ie">babel-preset-es2015-ie</a></code>
-                  for compiling ES6 JavaScript files
-                </li>
-              </ul>
-              <p>
-                Apart from <code>package.json</code>, the following files are included:
-              </p>
-              <ul>
-                <li>
-                  <code>.babelrc</code> configuration file for <a href="https://babeljs.io/">Babel</a>
-                </li>
-                <li>
-                  <code>.gitignore</code> common <a href="https://git-scm.com/">Git</a> ignored files
-                </li>
-                <li>
-                  <code>index.html</code> this HTML5 file
-                </li>
-                <li>
-                  <code>_sass/main.scss</code> a basic SCSS file that <strong>imports Bulma</strong> and explains how to <strong>customize</strong> your styles, and compiles to <code>css/main.css</code>
-                </li>
-                <li>
-                  <code>_javascript/main.js</code> an ES6 JavaScript that compiles to <code>lib/main.js</code>
-                </li>
-              </ul>
-              <h3>Try it out!</h3>
-              <p>
-                To see if your setup works, follow these steps:
-              </p>
-              <ol>
-                <li>
-                  <p>
-                    <strong>Install</strong> all dependencies:
-                    <br>
-                    <pre><code>npm install</code></pre>
-                  </p>
-                </li>
-                <li>
-                  <p>
-                    <strong>Start</strong> the CSS and JS watchers:
-                    <br>
-                    <pre><code>npm start</code></pre>
-                  </p>
-                </li>
-                <li>
-                  <p>
-                    <strong>Edit</strong> <code>_sass/main.scss</code> by adding the following rule at the <strong>end</strong> of the file:
-                    <br>
-                    <pre><code>html { background-color: $green;}</code></pre>
-                  </p>
-                </li>
-              </ol>
-              <p>
-                The page background should turn <strong class="has-text-success">green</strong>!
-              </p>
-              <h3>Get started</h3>
-              <p>
-                You're <strong>ready</strong> to create your own designs with Bulma. Just edit or duplicate this page, or simply create a new one!
-                <br>
-                For example, this page is <strong>only</strong> built with the following <strong>Bulma elements</strong>:
-              </p>
-            </div>
-            <table class="table is-bordered is-fullwidth">
-              <thead>
-                <tr>
-                  <th>Type</th>
-                  <th>CSS class</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <th>Columns</th>
-                  <td>
-                    <code><a href="http://bulma.io/documentation/columns/basics">columns</a></code>
-                    <code><a href="http://bulma.io/documentation/columns/basics">column</a></code>
-                  </td>
-                </tr>
-                <tr>
-                  <th>Layout</th>
-                  <td>
-                    <code><a href="http://bulma.io/documentation/layout/section">section</a></code>
-                    <code><a href="http://bulma.io/documentation/layout/container">container</a></code>
-                    <code><a href="http://bulma.io/documentation/layout/footer">footer</a></code>
-                  </td>
-                </tr>
-                <tr>
-                  <th>Elements</th>
-                  <td>
-                    <code><a href="http://bulma.io/documentation/elements/button">button</a></code>
-                    <code><a href="http://bulma.io/documentation/elements/content">content</a></code>
-                    <code><a href="http://bulma.io/documentation/elements/title">title</a></code>
-                    <code><a href="http://bulma.io/documentation/elements/title">subtitle</a></code>
-                  </td>
-                </tr>
-                <tr>
-                  <th>Form</th>
-                  <td>
-                    <code><a href="http://bulma.io/documentation/form/general">field</a></code>
-                    <code><a href="http://bulma.io/documentation/form/general">control</a></code>
-                  </td>
-                </tr>
-                <tr>
-                  <th>Helpers</th>
-                  <td>
-                    <code><a href="http://bulma.io/documentation/modifiers/typography-helpers/">has-text-centered</a></code>
-                    <code><a href="http://bulma.io/documentation/modifiers/typography-helpers/">has-text-weight-semibold</a></code>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-            <div class="content">
-              <p>
-                If you want to <strong>learn more</strong>, follow these links:
-              </p>
-            </div>
-            <div class="field is-grouped">
-              <p class="control">
-                <a class="button is-medium is-primary" href="http://bulma.io">
-                  <strong class="has-text-weight-semibold">Bulma homepage</strong>
-                </a>
-              </p>
-              <p class="control">
-                <a class="button is-medium is-link" href="http://bulma.io/documentation/overview/start/">
-                  <strong class="has-text-weight-semibold">Documentation</strong>
-                </a>
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <footer class="footer has-text-centered">
-      <div class="container">
-         <div class="columns">
-          <div class="column is-8-desktop is-offset-2-desktop">
-            <p>
-              <strong class="has-text-weight-semibold">
-                <a href="https://www.npmjs.com/package/bulma-start">bulma-start@0.0.1</a>
-              </strong>
-            </p>
-            <p>
-              <small>
-                Source code licensed <a href="http://opensource.org/licenses/mit-license.php">MIT</a>
-              </small>
-            </p>
-            <p style="margin-top: 1rem;">
-              <a href="http://bulma.io">
-                <img src="made-with-bulma.png" alt="Made with Bulma" width="128" height="24">
-              </a>
-            </p>
-          </div>
-        </div>
-      </div>
-    </footer>
-    <script type="text/javascript" src="lib/main.js"></script>
-  </body>
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Áurea Carolina 5018 - Deputada Federal</title>
+
+	<link rel="stylesheet" href="css/main.css">
+
+	<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+
+	<link href="https://fonts.googleapis.com/css?family=Raleway:300,300i,400,400i,700,700i,900,900i" rel="stylesheet" defer>
+
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/solid.css" integrity="sha384-wnAC7ln+XN0UKdcPvJvtqIH3jOjs9pnKnq9qX68ImXvOGz2JuFoEiCjT8jyZQX2z" crossorigin="anonymous" defer>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/brands.css" integrity="sha384-nT8r1Kzllf71iZl81CdFzObMsaLOhqBU1JD2+XoAALbdtWaXDOlWOZTR4v1ktjPE" crossorigin="anonymous" defer>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/fontawesome.css" integrity="sha384-HbmWTHay9psM8qyzEKPc8odH4DsOuzdejtnr+OFtDmOcIVnhgReQ4GZBH7uwcjf6" crossorigin="anonymous" defer>
+</head>
+
+<body class="has-navbar-fixed-top">
+	<nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
+		<div class="container">
+			<div class="navbar-brand">
+				<a class="navbar-item" href="https://bulma.io">
+					<img
+						src="/img/logo.png"
+						srcset='/img/logo.png 1x,
+								/img/logo@2x.png 2x'
+						alt="Áurea Carolina 5018 - Deputada Federal">
+					</img>
+				</a>
+
+				<a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+					<span aria-hidden="true"></span>
+					<span aria-hidden="true"></span>
+					<span aria-hidden="true"></span>
+				</a>
+			</div>
+			<div class="navbar-menu">
+				<div class="navbar-end">
+					<a class="navbar-item is-active">
+						<span class="has-text-link">
+							Home
+						</span>
+					</a>
+					<a class="navbar-item">
+						<span class="has-text-link">
+							Sobre a Áurea
+						</span>
+					</a>
+					<a class="navbar-item">
+						<span class="has-text-link">
+							Trajetória Política
+						</span>
+					</a>
+					<a class="navbar-item">
+						<span class="has-text-link">
+							Eixos programáticos
+						</span>
+					</a>
+					<a class="navbar-item">
+						<span class="has-text-link">
+							Viralize!
+						</span>
+					</a>
+					<a class="navbar-item">
+						<span class="has-text-link">
+							FAC
+						</span>
+					</a>
+					<a class="navbar-item">
+						<span class="has-text-primary">
+							<span class="icon">
+								<i class="fas fa-search fa-lg"></i>
+							</span>
+						</span>
+					</a>
+				</div>
+			</div>
+			<div class="pulled-icons">
+				<img
+					src="/img/icons/seja-apoiadora.png"
+					srcset='/img/icons/seja-apoiadora.png 1x,
+							/img/icons/seja-apoiadora@2x.png 2x'
+					alt="Seja apoiadora">
+				</img>
+				<img
+					src="/img/icons/financie.png"
+					srcset='/img/icons/financie.png 1x,
+							/img/icons/financie@2x.png 2x'
+					alt="Financie">
+				</img>
+			</div>
+		</div>
+	</nav>
+
+	<section class="hero is-fullheight">
+		<div class="hero-body">
+			<div class="container">
+				<div class="columns is-centered">
+					<div class="column is-narrow">
+						<div class="play-button has-background-primary">
+							<img
+								src="/img/icons/play.png"
+								srcset='/img/icons/play.png 1x,
+										/img/icons/play@2x.png 2x'
+								alt="Play">
+							</img>
+						</div>
+						<span class="has-text-link has-text-weight-bold">
+							Solta o som!
+						</span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<span class="scroll-icon">
+			<img
+				src="/img/icons/mouse-scroll.png"
+				srcset='/img/icons/mouse-scroll.png 1x,
+				/img/icons/mouse-scroll@2x.png 2x'
+				alt="Role para baixo">
+			</img>
+		</span>
+	</section>
+
+	<section class="section has-background-primary sobre-aurea">
+		<div class="container">
+			<div class="columns">
+				<div class="column is-7 is-offset-5 content has-text-white">
+					<h1 class="title is-uppercase is-size-huge has-text-white is-marginless">Áurea</h1>
+					<div class="columns">
+						<div class="column is-10 is-offset-2">
+							<h2 class="subtitle is-size-1 has-text-weight-normal has-text-white">de muitos encontros</h2>
+						</div>
+					</div>
+					<div class="columns">
+						<div class="column is-8 is-offset-4">
+							<p>
+								Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, cons ectetuer adipiscing elit, sed diam nonummy nibh euismod.
+							</p>
+							<a href="#" class="read-more is-link has-text-weight-bold is-size-5">
+								<span>
+									>
+								</span>
+								Saiba mais
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="section has-background-info">
+		<div class="container">
+			<div class="columns is-vcentered">
+				<div class="column is-2">
+					<img
+						src="/img/home/eixos-programaticos.png"
+						srcset='/img/home/eixos-programaticos.png 1x,
+								/img/home/eixos-programaticos@2x.png 2x'
+						alt="Play">
+					</img>
+				</div>
+				<div class="column content has-text-white">
+					<h1 class="title is-uppercase is-size-big has-text-primary is-marginless has-text-weight-light">Eixos</h1>
+					<h1 class="title is-uppercase is-size-big has-text-primary is-marginless">programáticos</h1>
+					<div class="columns">
+						<div class="column is-half">
+							<p>
+								Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="section has-background-link">
+		<div class="container">
+			<div class="columns is-vcentered">
+				<div class="column content has-text-white">
+					<h1 class="title has-text-white has-text-weight-normal is-size-big is-marginless">Economia</h1>
+					<h1 class="title has-text-primary is-uppercase is-size-big is-marginless">Para o bem viver</h1>
+
+					<div class="columns">
+						<div class="column is-10">
+							<p>
+								Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et.
+							</p>
+							<a href="#" class="read-more is-primary has-text-weight-bold is-size-5">
+								<span>
+									>
+								</span>
+								Saiba mais
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="column">
+					<img
+						src="/img/home/video-1.jpg"
+						srcset='/img/home/video-1.jpg 1x,
+								/img/home/video-1@2x.jpg 2x'
+						alt="Play">
+					</img>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="section has-background-primary">
+		<div class="container">
+			<div class="columns is-vcentered">
+				<div class="column content has-text-white">
+					<h1 class="title has-text-link is-uppercase is-size-big is-marginless">Mais de nós</h1>
+					<h1 class="title has-text-white has-text-weight-normal is-size-big is-marginless">no poder</h1>
+
+					<div class="columns">
+						<div class="column is-10">
+							<p>
+								Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et.
+							</p>
+							<a href="#" class="read-more is-link has-text-weight-bold is-size-5">
+								<span>
+									>
+								</span>
+								Saiba mais
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="column">
+					<img
+						src="/img/home/video-1.jpg"
+						srcset='/img/home/video-1.jpg 1x,
+								/img/home/video-1@2x.jpg 2x'
+						alt="Play">
+					</img>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="section has-background-info">
+		<div class="container">
+			<div class="columns is-vcentered">
+				<div class="column content has-text-white">
+					<h1 class="title has-text-white has-text-weight-normal is-size-big is-marginless">Segurança</h1>
+					<h1 class="title has-text-primary is-uppercase is-size-big is-marginless">Para cuidar da vida</h1>
+
+					<div class="columns">
+						<div class="column is-10">
+							<p>
+								Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et.
+							</p>
+							<a href="#" class="read-more is-primary has-text-weight-bold is-size-5">
+								<span>
+									>
+								</span>
+								Saiba mais
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="column">
+					<img
+						src="/img/home/video-1.jpg"
+						srcset='/img/home/video-1.jpg 1x,
+								/img/home/video-1@2x.jpg 2x'
+						alt="Play">
+					</img>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="section trajetoria">
+		<div class="container">
+			<div class="columns">
+				<div class="column is-7 is-offset-5 content has-text-link">
+					<div class="title-container">
+						<h1 class="title has-text-white is-uppercase is-size-huge is-marginless">
+							Traje-<br />
+							tória
+						</h1>
+						<h1 class="subtitle has-text-link has-text-weight-normal is-size-big is-marginless">política</h1>
+					</div>
+					<div class="columns">
+						<div class="column is-8 is-offset-2">
+							<p>
+								Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et.
+							</p>
+							<a href="#" class="read-more is-link has-text-weight-bold is-size-5">
+								<span>
+									>
+								</span>
+								Saiba mais
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="section has-background-primary">
+		<div class="container">
+			<div class="columns">
+				<div class="column is-half">
+					<h1 class="title has-text-white has-text-weight-normal is-uppercase is-size-big is-marginless">Quem me</h1>
+					<h1 class="title has-text-white is-uppercase is-size-big is-marginless">torna forte</h1>
+				</div>
+				<div class="column is-half">
+					<div class="columns content has-text-white">
+						<div class="column is-10">
+							<p>
+								Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="columns is-centered">
+				<div class="column is-10">
+					<div class="home-videos">
+						<div>
+							<div class="columns is-multiline">
+								<div class="column is-half">
+									<div class="video">
+										<img
+											src="/img/home/video-marlise.jpg"
+											srcset='/img/home/video-marlise.jpg 1x,
+													/img/home/video-marlise@2x.jpg 2x'
+											alt="Play">
+										</img>
+										<div class="description has-background-link has-text-white">
+											<div class="is-uppercase has-text-weight-bold">Nome da pessoa</div>
+											<div class="has-text-weight-bold">Descrição super resumida da pessoa</div>
+										</div>
+									</div>
+								</div>
+								<div class="column is-half">
+									<div class="video">
+										<img
+											src="/img/home/video-marlise.jpg"
+											srcset='/img/home/video-marlise.jpg 1x,
+													/img/home/video-marlise@2x.jpg 2x'
+											alt="Play">
+										</img>
+										<div class="description has-background-link has-text-white">
+											<div class="is-uppercase has-text-weight-bold">Nome da pessoa</div>
+											<div class="has-text-weight-bold">Descrição super resumida da pessoa</div>
+										</div>
+									</div>
+								</div>
+								<div class="column is-half">
+									<div class="video">
+										<img
+											src="/img/home/video-marlise.jpg"
+											srcset='/img/home/video-marlise.jpg 1x,
+													/img/home/video-marlise@2x.jpg 2x'
+											alt="Play">
+										</img>
+										<div class="description has-background-link has-text-white">
+											<div class="is-uppercase has-text-weight-bold">Nome da pessoa</div>
+											<div class="has-text-weight-bold">Descrição super resumida da pessoa</div>
+										</div>
+									</div>
+								</div>
+								<div class="column is-half">
+									<div class="video">
+										<img
+											src="/img/home/video-marlise.jpg"
+											srcset='/img/home/video-marlise.jpg 1x,
+													/img/home/video-marlise@2x.jpg 2x'
+											alt="Play">
+										</img>
+										<div class="description has-background-link has-text-white">
+											<div class="is-uppercase has-text-weight-bold">Nome da pessoa</div>
+											<div class="has-text-weight-bold">Descrição super resumida da pessoa</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div>
+							<div class="columns is-multiline">
+								<div class="column is-half">
+									<div class="video">
+										<img
+											src="/img/home/video-marlise.jpg"
+											srcset='/img/home/video-marlise.jpg 1x,
+													/img/home/video-marlise@2x.jpg 2x'
+											alt="Play">
+										</img>
+										<div class="description has-background-link has-text-white">
+											<div class="is-uppercase has-text-weight-bold">Nome da pessoa</div>
+											<div class="has-text-weight-bold">Descrição super resumida da pessoa</div>
+										</div>
+									</div>
+								</div>
+								<div class="column is-half">
+									<div class="video">
+										<img
+											src="/img/home/video-marlise.jpg"
+											srcset='/img/home/video-marlise.jpg 1x,
+													/img/home/video-marlise@2x.jpg 2x'
+											alt="Play">
+										</img>
+										<div class="description has-background-link has-text-white">
+											<div class="is-uppercase has-text-weight-bold">Nome da pessoa</div>
+											<div class="has-text-weight-bold">Descrição super resumida da pessoa</div>
+										</div>
+									</div>
+								</div>
+								<div class="column is-half">
+									<div class="video">
+										<img
+											src="/img/home/video-marlise.jpg"
+											srcset='/img/home/video-marlise.jpg 1x,
+													/img/home/video-marlise@2x.jpg 2x'
+											alt="Play">
+										</img>
+										<div class="description has-background-link has-text-white">
+											<div class="is-uppercase has-text-weight-bold">Nome da pessoa</div>
+											<div class="has-text-weight-bold">Descrição super resumida da pessoa</div>
+										</div>
+									</div>
+								</div>
+								<div class="column is-half">
+									<div class="video">
+										<img
+											src="/img/home/video-marlise.jpg"
+											srcset='/img/home/video-marlise.jpg 1x,
+													/img/home/video-marlise@2x.jpg 2x'
+											alt="Play">
+										</img>
+										<div class="description has-background-link has-text-white">
+											<div class="is-uppercase has-text-weight-bold">Nome da pessoa</div>
+											<div class="has-text-weight-bold">Descrição super resumida da pessoa</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="section has-background-info">
+		<div class="container">
+			<div class="columns is-vcentered">
+				<div class="column content has-text-white">
+					<div class="columns is-vcentered">
+						<div class="column is-narrow">
+							<h1 class="title has-text-white is-uppercase is-size-big is-marginless">Viralize!</h1>
+						</div>
+						<div class="column">
+							<img
+								src="/img/home/viralize.png"
+								srcset='/img/home/viralize.png 1x,
+										/img/home/viralize@2x.png 2x'
+								alt="Play">
+							</img>
+						</div>
+					</div>
+					<p>
+						Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio
+					</p>
+					<a href="#" class="read-more is-primary has-text-weight-bold is-size-5">
+						<span>
+							>
+						</span>
+						Acesse os conteúdos da campanha
+					</a>
+				</div>
+				<div class="column content has-text-white has-text-centered">
+					<img
+						src="/img/home/viralize-1.png"
+						srcset='/img/home/viralize-1.png 1x,
+								/img/home/viralize-1@2x.png 2x'
+						alt="Play">
+					</img>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="section seja-apoiadora">
+		<div class="container">
+			<div class="columns">
+				<div class="column is-5 content">
+					<h1 class="title has-text-white has-text-weight-normal is-uppercase is-size-big is-marginless">Seja</h1>
+					<h1 class="title has-text-primary is-uppercase is-size-big is-marginless">apoiadora!</h1>
+				</div>
+				<div class="column is-5 content has-text-white">
+					<p>
+						Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et
+					</p>
+					<div class="icon-read-more">
+						<img
+							src="/img/home/seja-apoiadora-1.png"
+							srcset='/img/home/seja-apoiadora-1.png 1x,
+							/img/home/seja-apoiadora-1@2x.png 2x'
+							alt="Seja apoiadora">
+						</img>
+						<a href="#" class="read-more is-primary has-text-weight-bold is-size-5">
+							<span>
+								>
+							</span>
+							Cadastre-se para ser uma apoiadora
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="section has-background-link doe-para-campanha">
+		<div class="container">
+			<div class="columns">
+				<div class="column is-5 content">
+					<h1 class="title has-text-white has-text-weight-normal is-uppercase is-size-big is-marginless">Doe</h1>
+					<h1 class="title has-text-primary is-size-big is-marginless">para a campanha</h1>
+				</div>
+				<div class="column is-5 content has-text-white">
+					<p>
+						Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et
+					</p>
+					<div class="icon-read-more">
+						<img
+							src="/img/home/doe-para-campanha-1.png"
+							srcset='/img/home/doe-para-campanha-1.png 1x,
+							/img/home/doe-para-campanha-1@2x.png 2x'
+							alt="Seja apoiadora">
+						</img>
+						<a href="#" class="read-more is-primary has-text-weight-bold is-size-5">
+							<span>
+								>
+							</span>
+							Doe para a campanha de Áurea
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="section has-background-primary juntas-podemos">
+		<div class="container">
+			<div class="columns">
+				<div class="column is-3 content">
+					<h1 class="title has-text-white has-text-weight-normal is-uppercase is-size-1 is-marginless">Juntas</h1>
+					<h1 class="title has-text-link is-size-1 is-marginless">podemos!</h1>
+				</div>
+				<div class="column is-4 content">
+					<p class="has-text-link has-text-weight-bold">
+						Quer saber ainda mais sobre a minha campanha, acesse as dúvidas mais comuns sobre minha campanha:
+					</p>
+					<a href="#" class="read-more is-link has-text-weight-bold is-size-5">
+						<span>
+							>
+						</span>
+						Dúvidas mais comuns
+					</a>
+				</div>
+			</div>
+			<div class="columns is-gapless is-marginless">
+				<div class="column is-1">
+					<hr class="is-link"></hr>
+				</div>
+			</div>
+			<div class="columns">
+				<div class="column is-4">
+					<p class="has-text-link has-text-weight-bold">
+						Me siga nas redes e fique por dentro da agenda da campanha:
+					</p>
+					<div class="social-group">
+						<div class="social-icon">
+							<span class="icon is-large">
+								<i class="fab fa-facebook-f fa-2x"></i>
+							</span>
+						</div>
+						<div class="social-icon">
+							<span class="icon is-large">
+								<i class="fab fa-youtube fa-2x"></i>
+							</span>
+						</div>
+						<div class="social-icon">
+							<span class="icon is-large">
+								<i class="fab fa-instagram fa-2x"></i>
+							</span>
+						</div>
+						<div class="social-icon">
+							<span class="icon is-large">
+								<i class="fab fa-twitter fa-2x"></i>
+							</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<footer class="footer">
+		<div class="container">
+			<div class="columns is-centered is-vcentered">
+				<div class="column is-6 is-offset-1 campaign-logos">
+					<img
+						src="/img/logo-psol.png"
+						srcset='/img/logo-psol.png 1x,
+						/img/logo-psol@2x.png 2x'
+						alt="Muitas, PSOL">
+					</img>
+					<img
+						src="/img/logo.png"
+						srcset='/img/logo.png 1x,
+						/img/logo@2x.png 2x'
+						alt="Áurea Carolina 5018 - Deputada Federal">
+					</img>
+				</div>
+				<div class="column is-4 content has-text-link campaign-data">
+					<p>
+						CNPJ da campanha:<br />
+						00.000.000/0001-00
+					</p>
+					<p>
+						contato:<br />
+						<span class="has-text-weight-bold">contato@aureacarolina5018.com.br</span>
+					</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+
+
+
+	<script type="text/javascript" src="//code.jquery.com/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="//code.jquery.com/jquery-migrate-3.0.1.min.js"></script>
+	<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+	<script type="text/javascript" src="lib/main.js"></script>
+</body>
 </html>

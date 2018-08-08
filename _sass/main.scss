@@ -1,29 +1,332 @@
 @charset "utf-8";
 
-// Customization
+// Bulma Customization
 
-// You can easily customize Bulma with your own variables.
-// Just uncomment the following block to see the result.
-
-/*
-// 1. Import the initial variables
 @import "../node_modules/bulma/sass/utilities/initial-variables";
 
-// 2. Set your own initial variables
-// Update the blue shade, used for links
-$blue: #06bcef;
-// Add pink and its invert
-$pink: #ff8080;
-$pink-invert: #fff;
-// Update the sans-serif font family
-$family-sans-serif: "Helvetica", "Arial", sans-serif;
+// Fonts
+$family-sans-serif: "Raleway", sans-serif;
 
-// 3. Set the derived variables
-// Use the new pink as the primary color
-$primary: $pink;
-$primary-invert: $pink-invert;
-
-// 4. Import the rest of Bulma
-*/
+//Colors
+$primary: #FF5244;
+$link: #980077;
+$info: #43368E;
 
 @import "../node_modules/bulma/bulma";
+
+/**
+	Navbar styles
+**/
+
+.navbar {
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+
+	& .pulled-icons {
+		position: absolute;
+		bottom: -60%;
+		right: 5%;
+		text-align: right;
+	}
+}
+
+.navbar-item {
+	font-weight: bold;
+
+	& img {
+	 max-height: 4rem;
+	}
+
+	&.is-active span {
+		background-color: $primary;
+		padding: 0 0.5rem;
+	}
+
+	&:hover {
+		background-color: transparent !important;
+	}
+}
+
+/**
+	Helper classes
+**/
+
+.is-size-huge {
+	font-size: 8rem !important;
+}
+
+.is-size-big {
+	font-size: 4rem !important;
+}
+
+/**
+	General elements
+**/
+
+.play-button {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100px;
+	height: 100px;
+	border-radius: 100%;
+
+	& img {
+		margin-left: 10%;
+	}
+}
+
+.read-more {
+	color: $white;
+	padding-bottom: 0.25rem;
+
+	&:hover {
+		color: white;
+		border-bottom: 3px solid $white;
+	}
+
+	&.is-primary {
+		& span {
+			color: $primary;
+		}
+
+		&:hover {
+			border-color: $primary;
+		}
+	}
+
+	&.is-link {
+		& span {
+			color: $link;
+		}
+
+		&:hover {
+			border-color: $link;
+		}
+	}
+}
+
+.icon-read-more {
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+
+	& img {
+		margin-right: 0.5em;
+	}
+}
+
+hr {
+	height: 8px;
+
+	&.is-link {
+		background-color: $link;
+	}
+}
+
+/**
+	Home styles
+**/
+
+section.hero {
+	background-image: url('/img/home/hero.jpg');
+	background-size: cover;
+	background-position: center;
+
+	@media
+	(-webkit-min-device-pixel-ratio: 2),
+	(min-resolution: 192dpi) {
+		background-image: url('/img/home/hero@2x.jpg');
+	}
+
+	& .scroll-icon {
+		position: absolute;
+		bottom: 0;
+		left: calc(50% - 14px);
+	}
+}
+
+section.sobre-aurea {
+	background-image: url('/img/home/sobre-aurea.png');
+	background-size: contain;
+	background-position: left center;
+	background-repeat: no-repeat;
+
+	@media
+	(-webkit-min-device-pixel-ratio: 2),
+	(min-resolution: 192dpi) {
+		background-image: url('/img/home/sobre-aurea@2x.png');
+	}
+
+	@media (max-width: 768px) {
+		background-position: top center;
+
+	}
+}
+
+section.trajetoria {
+	background-image: url('/img/home/trajetoria.jpg');
+	background-size: cover;
+	background-position: center;
+
+	@media
+	(-webkit-min-device-pixel-ratio: 2),
+	(min-resolution: 192dpi) {
+		background-image: url('/img/home/trajetoria@2x.jpg');
+	}
+
+	& .title-container {
+		position: relative;
+
+		& .subtitle {
+			position: absolute;
+			right: 20%;
+			top: 6rem;
+		}
+	}
+}
+
+.home-videos {
+	margin-bottom: 4em;
+
+	& .video  {
+		position: relative;
+
+		& img {
+			width: 100%;
+		}
+
+		& .description {
+			position: absolute;
+			bottom: 0;
+			width: 100%;
+			padding: 0.5em;
+		}
+	}
+
+	.slick-prev, .slick-next {
+	    position: absolute;
+	    top: 50%;
+	    display: block;
+	    padding: 0;
+	    -webkit-transform: translate(0, -50%);
+	    -ms-transform: translate(0, -50%);
+	    transform: translate(0, -50%);
+	    cursor: pointer;
+	    color: $info;
+	    border: none;
+	    outline: none;
+	    background: transparent;
+	}
+
+	.slick-prev {
+	    left: -5rem;
+	}
+
+	.slick-next {
+	    right: -5rem;
+	}
+
+	.slick-dots { position: absolute; bottom: -5em; list-style: none; display: block; text-align: center; padding: 0; width: 100%; }
+	.slick-dots li { position: relative; display: inline-block; height: 20px; width: 20px; margin: 0 5px; padding: 0; cursor: pointer; }
+	.slick-dots li button { border: 0; background: transparent; display: block; height: 20px; width: 20px; outline: none; line-height: 0; font-size: 0; color: transparent; padding: 5px; cursor: pointer; }
+	.slick-dots li button:hover, .slick-dots li button:focus { outline: none; }
+	.slick-dots li button:hover:before, .slick-dots li button:focus:before { opacity: 1; }
+	.slick-dots li button:before { position: absolute; top: 0; left: 0; content: "•"; width: 20px; height: 20px; font-family: "slick"; font-size: 45px; line-height: 5px; text-align: center; color: white; opacity: 0.75; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+	.slick-dots li.slick-active button:before { color: $link; opacity: 0.75; }
+}
+
+section.seja-apoiadora {
+	background-image: url('/img/home/seja-apoiadora.jpg');
+	background-size: cover;
+	background-position: top;
+
+	@media
+	(-webkit-min-device-pixel-ratio: 2),
+	(min-resolution: 192dpi) {
+		background-image: url('/img/home/seja-apoiadora@2x.jpg');
+	}
+
+	& .title-container {
+		position: relative;
+
+		& .subtitle {
+			position: absolute;
+			right: 20%;
+			top: 6rem;
+		}
+	}
+}
+
+section.doe-para-campanha {
+	background-image: url('/img/home/doe-para-campanha.png');
+	background-size: contain;
+	background-position: right;
+	background-repeat: no-repeat;
+
+	@media
+	(-webkit-min-device-pixel-ratio: 2),
+	(min-resolution: 192dpi) {
+		background-image: url('/img/home/doe-para-campanha@2x.png');
+	}
+
+	@media (max-width: 768px) {
+		background-position: right top;
+	}
+
+	& .title-container {
+		position: relative;
+
+		& .subtitle {
+			position: absolute;
+			right: 20%;
+			top: 6rem;
+		}
+	}
+}
+
+section.juntas-podemos {
+	background-image: url('/img/juntas-podemos.png');
+	background-size: contain;
+	background-position: right center;
+	background-repeat: no-repeat;
+
+	@media
+	(-webkit-min-device-pixel-ratio: 2),
+	(min-resolution: 192dpi) {
+		background-image: url('/img/juntas-podemos@2x.png');
+	}
+
+	@media (max-width: 768px) {
+		background-position: right top;
+	}
+
+	& .social-group {
+		display: flex;
+		align-items: flex-start;
+		margin-top: 1em;
+
+		.social-icon {
+			color: $primary;
+			background-color: $white;
+			margin-right: 1em;
+			border-radius: 100%;
+		}
+	}
+}
+
+footer {
+	.campaign-logos {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+
+		& img {
+			margin-right: 2em;
+		}
+	}
+
+	.campaign-data {
+		border-left: 5px solid $primary;
+	}
+}
