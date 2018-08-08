@@ -1,15 +1,15 @@
 {
-  "name": "bulma-start",
+  "name": "gabinetona-aurea-website",
   "version": "0.0.2",
-  "description": "Start package for Bulma",
+  "description": "Site para a campanha da candidata Áurea Carolina para Deputada Federal",
   "keywords": [
     "sass",
     "bulma",
     "css",
     "start"
   ],
-  "author": "Jeremy Thomas <bbxdesign@gmail.com> (http://jgthms.com)",
-  "license": "MIT",
+  "author": "Guilherme Capanema <guilherme@capanema.me> (https://capanema.me)",
+  "license": "AGPLv3",
   "devDependencies": {
     "autoprefixer": "^7.1.5",
     "babel-cli": "^6.26.0",
