@@ -11,6 +11,14 @@ $('.search-box').click(function(event) {
 	event.stopPropagation();
 });
 
+$('.modal-open').click(function(event) {
+	$($(this).attr('data-target')).addClass('is-active');
+});
+
+$('.modal-icon.close').click(function(event) {
+	$('.modal').removeClass('is-active');
+});
+
 $(document).ready(function(){
 	$('.home-videos').slick({
 		dots: true,

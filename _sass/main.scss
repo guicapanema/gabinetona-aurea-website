@@ -178,6 +178,29 @@ hr {
 	align-items: center;
 }
 
+.right-menu div {
+	border-left: 1px solid $white;
+	padding: 0.5em 1em;
+}
+
+.modal-icons {
+	position: absolute;
+	top: 0;
+	right: 0;
+	padding: 0.5em;
+
+	& .modal-icon {
+		display: inline-block;
+		border-radius: 100%;
+		background-color: $primary;
+		color: $white;
+	}
+}
+
+.modal-open {
+	cursor: pointer;
+}
+
 /**
 	Home styles
 **/
