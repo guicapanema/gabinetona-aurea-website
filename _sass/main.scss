@@ -18,6 +18,11 @@ $info: #43368E;
 	Navbar styles
 **/
 
+html.has-navbar-fixed-top,
+body.has-navbar-fixed-top {
+	padding-top: 6.25rem;
+}
+
 .navbar {
 	padding-top: 1rem;
 	padding-bottom: 1rem;
@@ -46,6 +51,7 @@ $info: #43368E;
 		background-color: transparent !important;
 	}
 }
+
 .navbar-item.search {
 	position: relative;
 
@@ -80,6 +86,21 @@ $info: #43368E;
 
 .is-size-big {
 	font-size: 4rem !important;
+}
+
+.is-offset-left-1 {
+	position: relative;
+	left: -8.33333%
+}
+
+.is-offset-left-8 {
+	position: relative;
+	margin-left: -66.66666%
+}
+
+.column.is-pulled-right {
+	position: absolute;
+	right: 0;
 }
 
 /**
@@ -147,11 +168,21 @@ hr {
 	}
 }
 
+.section.highlight {
+	min-height: 40vw;
+	background-size: 60%;
+	background-position: top right;
+	background-repeat: no-repeat;
+	display: flex;
+
+	align-items: center;
+}
+
 /**
 	Home styles
 **/
 
-section.hero {
+.home section.hero {
 	background-image: url('/img/home/hero.jpg');
 	background-size: cover;
 	background-position: center;
@@ -169,7 +200,7 @@ section.hero {
 	}
 }
 
-section.sobre-aurea {
+.home section.sobre-aurea {
 	background-image: url('/img/home/sobre-aurea.png');
 	background-size: contain;
 	background-position: left center;
@@ -187,7 +218,7 @@ section.sobre-aurea {
 	}
 }
 
-section.trajetoria {
+.home section.trajetoria {
 	background-image: url('/img/home/trajetoria.jpg');
 	background-size: cover;
 	background-position: center;
@@ -209,7 +240,7 @@ section.trajetoria {
 	}
 }
 
-.home-videos {
+.home .home-videos {
 	margin-bottom: 4em;
 
 	& .video  {
@@ -259,7 +290,7 @@ section.trajetoria {
 	.slick-dots li.slick-active button:before { color: $link; opacity: 0.75; }
 }
 
-section.seja-apoiadora {
+.home section.seja-apoiadora {
 	background-image: url('/img/home/seja-apoiadora.jpg');
 	background-size: cover;
 	background-position: top;
@@ -281,7 +312,7 @@ section.seja-apoiadora {
 	}
 }
 
-section.doe-para-campanha {
+.home section.doe-para-campanha {
 	background-image: url('/img/home/doe-para-campanha.png');
 	background-size: contain;
 	background-position: right;
@@ -307,6 +338,25 @@ section.doe-para-campanha {
 		}
 	}
 }
+
+/**
+	Sobre Áurea styles
+**/
+
+
+#highlight-sobre {
+	background-image: url('/img/sobre-a-aurea/destaque.jpg');
+
+	@media
+	(-webkit-min-device-pixel-ratio: 2),
+	(min-resolution: 192dpi) {
+		background-image: url('/img/sobre-a-aurea/destaque@2x.jpg');
+	}
+}
+
+/**
+	Footer styles
+**/
 
 section.juntas-podemos {
 	background-image: url('/img/juntas-podemos.png');
