@@ -103,6 +103,10 @@ body.has-navbar-fixed-top {
 	right: 0;
 }
 
+.has-margin-top-200 {
+	margin-top: 2em;
+}
+
 /**
 	General elements
 **/
@@ -383,7 +387,7 @@ hr {
 
 .slider-gabinetona {
 	margin-bottom: 4em;
-	
+
 	.slick-prev, .slick-next {
 	    position: absolute;
 	    top: 50%;
@@ -414,6 +418,25 @@ hr {
 	.slick-dots li button:hover:before, .slick-dots li button:focus:before { opacity: 1; }
 	.slick-dots li button:before { position: absolute; top: 0; left: 0; content: "•"; width: 20px; height: 20px; font-family: "slick"; font-size: 45px; line-height: 5px; text-align: center; color: white; opacity: 0.75; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
 	.slick-dots li.slick-active button:before { color: $primary; opacity: 0.75; }
+}
+
+/**
+	Viralize styles
+**/
+
+.viralize .peca {
+	position: relative;
+
+	& img {
+		width: 100%;
+	}
+
+	& .description {
+		position: absolute;
+		bottom: 0;
+		width: 100%;
+		padding: 0.5em;
+	}
 }
 
 /**
