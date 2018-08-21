@@ -88,6 +88,11 @@ body.has-navbar-fixed-top {
 
 .navbar-item.search {
 	position: relative;
+	color: $primary;
+
+	&:hover {
+		color: $link;
+	}
 
 	.search-box {
 		position: absolute;
@@ -209,6 +214,10 @@ body.has-navbar-fixed-top {
 	& img {
 		margin-right: 0.5em;
 	}
+
+	& a:hover {
+		margin-top: 3px;
+	}
 }
 
 hr {
@@ -258,6 +267,13 @@ hr {
 	@media (max-width: 768px) {
 		width: 90vw;
 	}
+}
+
+.anchor {
+	display: block;
+    position: relative;
+	top: -6.25rem;
+    visibility: hidden;
 }
 
 /**
@@ -541,7 +557,7 @@ footer {
 		align-items: center;
 		justify-content: center;
 
-		& img {
+		& div:first-of-type {
 			margin-right: 2em;
 		}
 	}
