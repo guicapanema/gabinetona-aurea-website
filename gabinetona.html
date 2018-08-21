@@ -32,13 +32,13 @@
 					</img>
 				</a>
 
-				<a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+				<a role="button" class="navbar-burger" data-target="navMenu" aria-label="menu" aria-expanded="false">
 					<span aria-hidden="true"></span>
 					<span aria-hidden="true"></span>
 					<span aria-hidden="true"></span>
 				</a>
 			</div>
-			<div class="navbar-menu">
+			<div class="navbar-menu" id="navMenu">
 				<div class="navbar-end">
 					<a class="navbar-item" href="/">
 						<span class="has-text-link">
@@ -70,7 +70,26 @@
 							Viralize!
 						</span>
 					</a>
-					<a class="navbar-item search">
+					<a class="navbar-item is-hidden-desktop" href="https://goo.gl/forms/9nNXQhZyIdboANnl2" target="_blank">
+						<img
+							src="/img/icons/seja-apoiadora.png"
+							srcset='/img/icons/seja-apoiadora.png 1x,
+									/img/icons/seja-apoiadora@2x.png 2x'
+							alt="Seja apoiadora">
+						</img>
+					</a>
+					<a class="navbar-item is-hidden-desktop" href="https://muitas.evoecultural.com/aurea/" target="_blank">
+						<img
+							src="/img/icons/financie.png"
+							srcset='/img/icons/financie.png 1x,
+									/img/icons/financie@2x.png 2x'
+							alt="Financie">
+						</img>
+					</a>
+					<span class="navbar-item is-hidden-desktop">
+						<input type="text" placeholder="Digite o que você deseja buscar">
+					</span>
+					<a class="navbar-item search is-hidden-touch">
 						<span class="has-text-primary">
 							<span class="icon">
 								<i class="fas fa-search fa-lg"></i>
@@ -109,16 +128,14 @@
 				<div class="column is-half is-offset-left-1">
 					<img
 						src="/img/a-gabinetona/gabinetona.jpg"
-						srcset='/img/a-gabinetona/gabinetona.jpg 1x,
-								/img/a-gabinetona/gabinetona@2x.jpg 2x'
-						alt="Áurea">
+						alt="Gabinetona">
 					</img>
 				</div>
 
 				<div class="column is-5 content">
 					<div class="is-offset-left-8">
-							<h1 class="title is-uppercase is-size-huge has-text-primary is-marginless">Gabinetona</h1>
-							<h1 class="subtitle is-uppercase is-size-1 has-text-link has-text-weight-light has-text-right">Rumo a Brasília</h1>
+							<h1 class="title is-uppercase is-size-huge has-text-primary is-marginless hyphenate">Gabinetona</h1>
+							<h1 class="subtitle is-uppercase is-size-1 has-text-link has-text-weight-light has-text-right-desktop">Rumo a Brasília</h1>
 					</div>
 					<p>
 						Eleitas em 2016 a partir de uma campanha coletiva, as vereadoras Áurea Carolina e Cida Falabella retiraram as divisórias entre dois gabinetes e abriram uma Gabinetona dentro da Câmara Municipal de BH. De forma inédita, elas compartilham um mandato coletivo, aberto e popular, exercido em covereança com a primeira suplente Bella Gonçalves. A equipe do mandato, formada em sua maioria por mulheres e pessoas negras, tem o compromisso de fortalecer as lutas populares e, com elas, incidir junto ao poder público local. O espaço de trabalho é integrado, assim como as ações parlamentares e o diálogo com a cidade.
@@ -296,8 +313,8 @@
 		<div class="container">
 			<div class="columns">
 				<div class="column is-half">
-					<h1 class="title has-text-link is-uppercase is-size-1 is-marginless">Somos muitas e vamos juntas</h1>
-					<h1 class="title has-text-white has-text-weight-normal is-size-1 is-marginless">ocupar a Câmara dos Deputados!</h1>
+					<h1 class="title has-text-link is-uppercase is-size-2 is-marginless">Somos muitas e vamos juntas</h1>
+					<h1 class="title has-text-white has-text-weight-normal is-size-2 is-marginless">ocupar a Câmara dos Deputados!</h1>
 				</div>
 			</div>
 			<div class="columns is-gapless is-marginless">
@@ -341,18 +358,22 @@
 		<div class="container">
 			<div class="columns is-centered is-vcentered">
 				<div class="column is-6 is-offset-1 campaign-logos">
-					<img
-						src="/img/logo-psol.png"
-						srcset='/img/logo-psol.png 1x,
-						/img/logo-psol@2x.png 2x'
-						alt="Muitas, PSOL">
-					</img>
-					<img
-						src="/img/logo.png"
-						srcset='/img/logo.png 1x,
-						/img/logo@2x.png 2x'
-						alt="Áurea Carolina 5018 - Deputada Federal">
-					</img>
+					<div>
+						<img
+							src="/img/logo-psol.png"
+							srcset='/img/logo-psol.png 1x,
+							/img/logo-psol@2x.png 2x'
+							alt="Muitas, PSOL">
+						</img>
+					</div>
+					<div>
+						<img
+							src="/img/logo.png"
+							srcset='/img/logo.png 1x,
+							/img/logo@2x.png 2x'
+							alt="Áurea Carolina 5018 - Deputada Federal">
+						</img>
+					</div>
 				</div>
 				<div class="column is-4 content has-text-link campaign-data">
 					<p>

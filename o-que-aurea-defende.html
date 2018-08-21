@@ -32,13 +32,13 @@
 					</img>
 				</a>
 
-				<a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+				<a role="button" class="navbar-burger" data-target="navMenu" aria-label="menu" aria-expanded="false">
 					<span aria-hidden="true"></span>
 					<span aria-hidden="true"></span>
 					<span aria-hidden="true"></span>
 				</a>
 			</div>
-			<div class="navbar-menu">
+			<div class="navbar-menu" id="navMenu">
 				<div class="navbar-end">
 					<a class="navbar-item" href="/">
 						<span class="has-text-link">
@@ -70,7 +70,26 @@
 							Viralize!
 						</span>
 					</a>
-					<a class="navbar-item search">
+					<a class="navbar-item is-hidden-desktop" href="https://goo.gl/forms/9nNXQhZyIdboANnl2" target="_blank">
+						<img
+							src="/img/icons/seja-apoiadora.png"
+							srcset='/img/icons/seja-apoiadora.png 1x,
+									/img/icons/seja-apoiadora@2x.png 2x'
+							alt="Seja apoiadora">
+						</img>
+					</a>
+					<a class="navbar-item is-hidden-desktop" href="https://muitas.evoecultural.com/aurea/" target="_blank">
+						<img
+							src="/img/icons/financie.png"
+							srcset='/img/icons/financie.png 1x,
+									/img/icons/financie@2x.png 2x'
+							alt="Financie">
+						</img>
+					</a>
+					<span class="navbar-item is-hidden-desktop">
+						<input type="text" placeholder="Digite o que você deseja buscar">
+					</span>
+					<a class="navbar-item search is-hidden-touch">
 						<span class="has-text-primary">
 							<span class="icon">
 								<i class="fas fa-search fa-lg"></i>
@@ -141,8 +160,8 @@
 					</img>
 				</div>
 				<div class="column">
-					<h1 class="title has-text-white has-text-weight-normal is-size-big is-marginless">Economia</h1>
-					<h1 class="title has-text-primary is-uppercase is-size-big is-marginless">Pelo bem viver</h1>
+					<h1 class="title has-text-white has-text-weight-normal is-size-1 is-marginless">Economia</h1>
+					<h1 class="title has-text-primary is-uppercase is-size-1 is-marginless">Pelo bem viver</h1>
 					<div class="columns">
 						<div class="column is-3 is-offset-2 has-text-white right-menu is-hidden-tablet">
 							<div class="is-size-7 has-text-weight-light">
@@ -160,7 +179,7 @@
 							</div>
 						</div>
 						<div class="column is-7 content has-text-white">
-							<p>
+							<p class="has-margin-top-100">
 								O Brasil é um dos países mais desiguais do mundo. A situação é agravada por medidas impostas recentemente pelo Congresso Nacional, como a reforma trabalhista e a Emenda Constitucional 95 (que congela os investimentos em políticas sociais durante 20 anos). A mortalidade infantil e a fome voltaram a assolar a população mais pobre. O desemprego aumentou, a violência disparou e as condições de vida pioraram. Enquanto isso, alguns poucos homens privilegiados enriquecem às custas do sofrimento de milhões de pessoas e da destruição dos recursos naturais. A pobreza e a desigualdade revelam a lógica racista, machista e opressora da sociedade brasileira, que ainda mantém na base da pirâmide social a população negra, os povos indígenas e quem vive nas periferias.
 							</p>
 							<p>
@@ -226,8 +245,8 @@
 					</img>
 				</div>
 				<div class="column">
-					<h1 class="title has-text-link is-uppercase is-size-big is-marginless">Segurança</h1>
-					<h1 class="title has-text-white has-text-weight-normal is-size-big is-marginless">para cuidar da vida</h1>
+					<h1 class="title has-text-link is-uppercase is-size-1 is-marginless">Segurança</h1>
+					<h1 class="title has-text-white has-text-weight-normal is-size-1 is-marginless">para cuidar da vida</h1>
 
 					<div class="columns">
 						<div class="column is-3 is-offset-2 has-text-white right-menu is-hidden-tablet">
@@ -246,8 +265,7 @@
 							</div>
 						</div>
 						<div class="column is-7 content has-text-white">
-							<br />
-							<p>
+							<p class="has-margin-top-100">
 								A violência chegou a níveis extremos no Brasil: atingimos taxas de homicídio maiores do que muitos países em guerra; as cadeias estão superlotadas; temos uma das polícias que mais mata e mais morre no mundo; o ódio contra mulheres, pessoas LGBT e  outros grupos vulnerabilizados é cada vez mais evidente e assustador. A juventude negra e pobre é a principal vítima desse sistema, em um verdadeiro cenário de genocídio. Baseado na chamada “guerra às drogas”, na criminalização da pobreza e na repressão policial, o atual modelo de segurança pública só agrava esse quadro: além de custar muito caro aos cofres públicos, não resolve o problema da violência e ainda insiste no seu próprio fracasso, alimentando a ideia enganosa de que a solução é investir em mais armas e punição. Quebrar esse círculo vicioso é urgente.
 							</p>
 							<p>
@@ -312,8 +330,8 @@
 					</img>
 				</div>
 				<div class="column">
-					<h1 class="title has-text-white has-text-weight-normal is-size-big is-marginless">Mais de nós</h1>
-					<h1 class="title has-text-primary is-uppercase is-size-big is-marginless">no poder</h1>
+					<h1 class="title has-text-white has-text-weight-normal is-size-1 is-marginless">Mais de nós</h1>
+					<h1 class="title has-text-primary is-uppercase is-size-1 is-marginless">no poder</h1>
 					<div class="columns">
 						<div class="column is-3 is-offset-2 has-text-white right-menu is-hidden-tablet">
 							<div class="is-size-7 has-text-weight-light">
@@ -331,7 +349,7 @@
 							</div>
 						</div>
 						<div class="column is-7 content has-text-white">
-							<p>
+							<p class="has-margin-top-100">
 								Mulheres, juventudes, pessoas negras, LGBT, indígenas, quilombolas, trabalhadoras e moradoras das periferias, juntas, são maioria em nosso país – mas ainda somos minoria nos espaços de poder. Os retrocessos que estamos sofrendo atualmente, com a perda de direitos que conquistamos ao longo da História, escancaram como as instituições permanecem controladas por setores que fazem de tudo para preservar seus privilégios e obter vantagens usando a máquina pública. A maior parte da população não confia no sistema político nem se sente representada por ele. Além disso, os frágeis avanços nos mecanismos de participação, desde a Constituição de 1988, estão ameaçados e já se mostraram insuficientes para efetivar políticas públicas que possam reverter as desigualdades e democratizar a sociedade brasileira.
 							</p>
 							<p>
@@ -418,8 +436,8 @@
 		<div class="container">
 			<div class="columns">
 				<div class="column is-half">
-					<h1 class="title has-text-link is-uppercase is-size-1 is-marginless">Somos muitas e vamos juntas</h1>
-					<h1 class="title has-text-white has-text-weight-normal is-size-1 is-marginless">ocupar a Câmara dos Deputados!</h1>
+					<h1 class="title has-text-link is-uppercase is-size-2 is-marginless">Somos muitas e vamos juntas</h1>
+					<h1 class="title has-text-white has-text-weight-normal is-size-2 is-marginless">ocupar a Câmara dos Deputados!</h1>
 				</div>
 			</div>
 			<div class="columns is-gapless is-marginless">
@@ -463,18 +481,22 @@
 		<div class="container">
 			<div class="columns is-centered is-vcentered">
 				<div class="column is-6 is-offset-1 campaign-logos">
-					<img
-						src="/img/logo-psol.png"
-						srcset='/img/logo-psol.png 1x,
-						/img/logo-psol@2x.png 2x'
-						alt="Muitas, PSOL">
-					</img>
-					<img
-						src="/img/logo.png"
-						srcset='/img/logo.png 1x,
-						/img/logo@2x.png 2x'
-						alt="Áurea Carolina 5018 - Deputada Federal">
-					</img>
+					<div>
+						<img
+							src="/img/logo-psol.png"
+							srcset='/img/logo-psol.png 1x,
+							/img/logo-psol@2x.png 2x'
+							alt="Muitas, PSOL">
+						</img>
+					</div>
+					<div>
+						<img
+							src="/img/logo.png"
+							srcset='/img/logo.png 1x,
+							/img/logo@2x.png 2x'
+							alt="Áurea Carolina 5018 - Deputada Federal">
+						</img>
+					</div>
 				</div>
 				<div class="column is-4 content has-text-link campaign-data">
 					<p>
