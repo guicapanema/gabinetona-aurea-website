@@ -18,11 +18,17 @@ $('#hero-play').click(function(event) {
 });
 
 $('.modal-open').click(function(event) {
+	console.debug('hello');
 	$($(this).attr('data-target')).addClass('is-active');
+
+	if ($(this).attr('data-video-id')) {
+		$('#video-container').html('<iframe style="position:absolute;top:0;left:0;width:100%;height:100%;" src="https://www.youtube-nocookie.com/embed/' + $(this).attr('data-video-id') + '?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>');
+	}
 });
 
 $('.modal-icon.close, .modal-background').click(function(event) {
 	$('.modal').removeClass('is-active');
+	$('#video-container').html('');
 });
 
 $(document).ready(function(){
