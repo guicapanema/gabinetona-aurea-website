@@ -257,6 +257,11 @@ hr {
 		background-color: $primary;
 		color: $white;
 	}
+
+	& .social-icons {
+		display: inline-block;
+		margin-right: 1rem;
+	}
 }
 
 .modal-open {
@@ -541,18 +546,32 @@ hr {
 	Viralize styles
 **/
 
+.viralize-menu a:hover {
+	background: $primary;
+	color: $link;
+}
+
 .viralize .peca {
 	position: relative;
-
-	& img {
-		width: 100%;
-	}
+	background-size: cover;
+	background-position: center;
+	padding-top: 100%;
 
 	& .description {
 		position: absolute;
 		bottom: 0;
 		width: 100%;
 		padding: 0.5em;
+	}
+}
+
+.modal.viralize {
+	& .modal-content {
+		max-width: 50vw;
+
+		@media (max-width: 768px) {
+			max-width: 90vw;
+		}
 	}
 }
 
