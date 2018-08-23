@@ -449,13 +449,7 @@ hr {
 
 
 #highlight-sobre {
-	background-image: url('/img/sobre-a-aurea/destaque.jpg');
-
-	@media
-	(-webkit-min-device-pixel-ratio: 2),
-	(min-resolution: 192dpi) {
-		background-image: url('/img/sobre-a-aurea/destaque@2x.jpg');
-	}
+	background-image: url('/img/sobre-aurea/destaque.jpg');
 }
 
 /**
@@ -463,6 +457,46 @@ hr {
 **/
 
 .slider-gabinetona {
+	.slick-prev, .slick-next {
+	    position: absolute;
+	    top: 40%;
+	    display: block;
+	    padding: 0;
+	    -webkit-transform: translate(0, -50%);
+	    -ms-transform: translate(0, -50%);
+	    transform: translate(0, -50%);
+	    cursor: pointer;
+	    color: $white;
+	    border: none;
+	    outline: none;
+	    background: transparent;
+		z-index: 3;
+	}
+
+	.slick-prev {
+	    left: 1rem;
+
+		@media (max-width: 768px) {
+			left: 0;
+		}
+	}
+
+	.slick-next {
+	    right: 3rem;
+
+		@media (max-width: 768px) {
+			right: 0;
+		}
+	}
+
+	.description {
+		color: $primary;
+		font-style: italic;
+	}
+}
+
+
+.slider-entregas {
 	margin-bottom: 4em;
 
 	.slick-prev, .slick-next {
@@ -543,14 +577,22 @@ section.juntas-podemos {
 
 	& .social-group {
 		display: flex;
-		align-items: flex-start;
+		justify-content: flex-start;
 		margin-top: 1em;
 
+		@media (max-width: 768px) {
+			align-items: center;
+			justify-content: center;
+		}
+
 		.social-icon {
-			color: $primary;
 			background-color: $white;
 			margin-right: 1em;
 			border-radius: 100%;
+
+			& a {
+				color: $primary;
+			}
 		}
 	}
 }

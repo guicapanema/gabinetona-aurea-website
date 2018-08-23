@@ -14,7 +14,7 @@ $('.search-box').click(function(event) {
 $('#hero-play').click(function(event) {
 	console.debug('hero-play');
 	$('.hero').addClass('is-hidden');
-	$('#hero-video-container').html('<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/284145465?autoplay=1&title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>');
+	$('#hero-video-container').html('<div style="padding:56.25% 0 0 0;position:relative;"><iframe style="position:absolute;top:0;left:0;width:100%;height:100%;" src="https://www.youtube-nocookie.com/embed/9reDZlUdwCE?rel=0&amp;showinfo=0&autoplay=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div>');
 });
 
 $('.modal-open').click(function(event) {
@@ -22,7 +22,7 @@ $('.modal-open').click(function(event) {
 	$($(this).attr('data-target')).addClass('is-active');
 
 	if ($(this).attr('data-video-id')) {
-		$('#video-container').html('<iframe style="position:absolute;top:0;left:0;width:100%;height:100%;" src="https://www.youtube-nocookie.com/embed/' + $(this).attr('data-video-id') + '?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>');
+		$('#video-container').html('<iframe style="position:absolute;top:0;left:0;width:100%;height:100%;" src="https://www.youtube-nocookie.com/embed/' + $(this).attr('data-video-id') + '?rel=0&amp;showinfo=0&autoplay=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>');
 	}
 });
 
@@ -40,7 +40,7 @@ $(document).ready(function(){
 		nextArrow: '<button class="slick-next"><span class="icon is-large"><i class="fas fa-chevron-right fa-3x"></i></span></button>',
     });
 
-	$('.slider-gabinetona').slick({
+	$('.slider-entregas').slick({
 		dots: true,
 		slidesToShow: 2,
 		slidesToScroll: 2,
@@ -62,6 +62,15 @@ $(document).ready(function(){
 				}
 			},
 		],
+    });
+
+	$('.slider-gabinetona').slick({
+		dots: false,
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		adaptiveHeight: true,
+		prevArrow: '<button class="slick-prev"><span class="icon is-large"><i class="fas fa-chevron-left fa-3x"></i></span></button>',
+		nextArrow: '<button class="slick-next"><span class="icon is-large"><i class="fas fa-chevron-right fa-3x"></i></span></button>',
     });
 
 	// Get all "navbar-burger" elements
