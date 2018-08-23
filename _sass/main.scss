@@ -291,12 +291,6 @@ hr {
 	max-height: calc(100vh - 6.25rem);
 	position: relative;
 
-	@media
-	(-webkit-min-device-pixel-ratio: 2),
-	(min-resolution: 192dpi) {
-		background-image: url('/img/home/hero@2x.jpg');
-	}
-
 	& .scroll-icon {
 		position: absolute;
 		bottom: 0;
@@ -533,6 +527,14 @@ hr {
 	.slick-dots li button:hover:before, .slick-dots li button:focus:before { opacity: 1; }
 	.slick-dots li button:before { position: absolute; top: 0; left: 0; content: "•"; width: 20px; height: 20px; font-family: "slick"; font-size: 45px; line-height: 5px; text-align: center; color: white; opacity: 0.75; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
 	.slick-dots li.slick-active button:before { color: $primary; opacity: 0.75; }
+}
+
+/**
+	Muitas styles
+**/
+
+#highlight-muitas {
+	background-image: url('/img/muitas/destaque.jpg');
 }
 
 /**
