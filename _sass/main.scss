@@ -394,14 +394,14 @@ hr {
 }
 
 .home section.seja-apoiadora {
-	background-image: url('/img/home/seja-apoiadora.jpg');
-	background-size: cover;
-	background-position: top;
+	background-color: $primary;
+	background-image: url('/img/home/seja-apoiadora.png'), url('/img/home/seja-apoiadora.png');
+	background-repeat: no-repeat, no-repeat;
+	background-position: bottom -10vw left -10vw, top -5vw right -15vw;
+	background-size: 40vw, 40vw;
 
-	@media
-	(-webkit-min-device-pixel-ratio: 2),
-	(min-resolution: 192dpi) {
-		background-image: url('/img/home/seja-apoiadora@2x.jpg');
+	@media (max-width: 768px) {
+		background-size: 60vw, 80vw;
 	}
 
 	& .title-container {

@@ -25,7 +25,6 @@ $('.modal-open').click(function(event)
 		$('#video-container').html('<iframe style="position:absolute;top:0;left:0;width:100%;height:100%;" src="https://www.youtube-nocookie.com/embed/' + $(this).attr('data-video-id') + '?rel=0&amp;showinfo=0&autoplay=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>');
 	}
 	else if ($(this).attr('data-peca-url')) {
-		console.debug('hello');
 		$('a#facebook').attr('href', 'https://www.facebook.com/sharer/sharer.php?u=' + encodeURIComponent('https://aureacarolina.com.br' + $(this).attr('data-peca-url')));
 
 		$('a#twitter').attr('href', 'https://twitter.com/home?status=' + encodeURIComponent('https://aureacarolina.com.br' + $(this).attr('data-peca-url')));
@@ -34,7 +33,12 @@ $('.modal-open').click(function(event)
 
 		$('a#download').attr('href', 'https://aureacarolina.com.br' + $(this).attr('data-peca-url'));
 
-		$($(this).attr('data-target') + ' img').attr('src', 'https://aureacarolina.com.br' + $(this).attr('data-peca-url'));
+
+		if($(this).attr('data-peca-url').split('.').pop() === 'mp4') {
+			$('#video-container').html('<video controls><source src="' + $(this).attr('data-peca-url') + '" type="video/mp4">Seu navegador não suporta vídeo HTML5.</video>');
+		} else {
+			$('#video-container').html('<img src="' + $(this).attr('data-peca-url') + '"></img>');
+		}
 	}
 });
 
