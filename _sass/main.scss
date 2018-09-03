@@ -320,13 +320,16 @@ hr {
 	background-size: cover;
 	background-position: center;
 
-	& .title-container {
-		position: relative;
+	@media (max-width: 768px) {
+		background-color: $link;
+		background-size: contain;
+		background-position: top center;
+		padding-top: 45vw;
+		background-repeat: no-repeat;
 
-		& .subtitle {
-			position: absolute;
-			right: 20%;
-			top: 6rem;
+		& .title.has-text-link,
+		& .read-more.is-link span {
+			color: $white !important
 		}
 	}
 }
